@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: {USERNAME}
+    password: {PASSWORD}
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  application:
+      name: flower-shop
+  h2:
+    console:
+      enabled: true
+gemini:
+    api:
+      key: {API_KEY}
+      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+
+
+
+server:
+  port: 8090
+
+
