@@ -22,7 +22,6 @@ public class FlowerShopService {
     private final RestTemplate restTemplate;
     private final FlowerShopRepository flowerRepository;
 
-    // Consider making this session/user-specific if needed
     private final List<String> chatHistory = new ArrayList<>();
 
     public FlowerShopService(RestTemplate restTemplate, FlowerShopRepository flowerRepository) {
